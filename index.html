@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>my vue</title>
+</head>
+<body>
+<div id="app">
+  <div>{{ message }}</div>
+  <div>{{ info.id }} - {{ info.text }}</div>
+</div>
+<script type="module" src="/src/main.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    data() {
+      return {
+        info: {
+          id: 1,
+          text: 'info'
+        },
+        message: ''
+      }
+    }
+  })
+</script>
+</body>
+</html>
